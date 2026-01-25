@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Videos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Browse Videos</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="videos.html">Videos</a>
+                <a href="analytics.html">Analytics</a>
+                <a href="about.html">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="search-filter">
+            <input type="text" id="searchInput" placeholder="Search videos...">
+            <select id="subjectFilter">
+                <option value="">All Subjects</option>
+            </select>
+            <select id="chapterFilter">
+                <option value="">All Chapters</option>
+            </select>
+        </div>
+
+        <div id="videosList" class="video-grid"></div>
+        <p id="noResults" style="display: none; text-align: center; color: #999;">No videos found</p>
+    </main>
+
+    <script src="js/api.js"></script>
+    <script src="js/videos.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Analytics Dashboard</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="videos.html">Videos</a>
+                <a href="analytics.html">Analytics</a>
+                <a href="about.html">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="stats">
+            <div class="stat-card">
+                <h3 id="totalViews">0</h3>
+                <p>Total Views</p>
+            </div>
+            <div class="stat-card">
+                <h3 id="totalVideos">0</h3>
+                <p>Total Videos</p>
+            </div>
+        </div>
+
+        <div class="analytics-grid">
+            <div class="analytics-card">
+                <h3>Most Popular Subject</h3>
+                <div id="popularSubject"></div>
+            </div>
+            <div class="analytics-card">
+                <h3>Most Popular Chapter</h3>
+                <div id="popularChapter"></div>
+            </div>
+        </div>
+
+        <div class="analytics-card" style="margin-bottom: 2rem;">
+            <h3>Top 10 Videos</h3>
+            <div id="topVideos"></div>
+        </div>
+
+        <div class="analytics-card">
+            <h3>Subject-wise Views</h3>
+            <div id="subjectBreakdown"></div>
+        </div>
+    </main>
+
+    <script src="js/api.js"></script>
+    <script src="js/analytics.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Notes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1 id="videoTitle">View Notes</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="videos.html">Videos</a>
+                <a href="analytics.html">Analytics</a>
+                <a href="about.html">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin-bottom: 1rem;">
+            <h2 id="videoName"></h2>
+            <p id="videoDescription" style="color: #666; margin: 0.5rem 0;"></p>
+            <div style="margin-top: 1rem;">
+                <a id="youtubeButton" href="#" target="_blank" class="btn btn-youtube">▶ Watch on YouTube</a>
+            </div>
+        </div>
+
+        <div style="background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin-bottom: 2rem;">
+            <iframe id="pdfViewer" class="pdf-viewer"></iframe>
+        </div>
+
+        <div class="related-videos">
+            <h2 class="section-title">Related Videos</h2>
+            <div id="relatedVideos" class="video-grid"></div>
+        </div>
+    </main>
+
+    <script src="js/api.js"></script>
+    <script src="js/viewer.js"></script>
+</body>
+</html>

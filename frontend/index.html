@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Educational Video Notes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1 id="channelName">Educational Video Notes</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="videos.html">Videos</a>
+                <a href="analytics.html">Analytics</a>
+                <a href="about.html">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero">
+            <h2 id="heroTitle">Welcome to Our Channel</h2>
+            <p id="heroDescription">Learn with our comprehensive video notes</p>
+            <a id="youtubeLink" href="#" target="_blank" class="btn btn-primary" style="margin-top: 1rem; display: none;">Visit YouTube Channel</a>
+        </div>
+
+        <div class="stats">
+            <div class="stat-card">
+                <h3 id="totalVideos">0</h3>
+                <p>Total Videos</p>
+            </div>
+            <div class="stat-card">
+                <h3 id="totalSubjects">0</h3>
+                <p>Subjects</p>
+            </div>
+            <div class="stat-card">
+                <h3 id="totalViews">0</h3>
+                <p>Total Views</p>
+            </div>
+        </div>
+
+        <h2 class="section-title">📚 Browse by Subject</h2>
+        <div id="subjects" class="subject-grid"></div>
+
+        <h2 class="section-title">⭐ Featured Videos</h2>
+        <div id="featuredVideos" class="video-grid"></div>
+
+        <h2 class="section-title">🔥 Trending Videos</h2>
+        <div id="trendingVideos" class="video-grid"></div>
+
+        <h2 class="section-title">⭐ Popular Videos</h2>
+        <div id="popularVideos" class="video-grid"></div>
+    </main>
+
+    <footer style="background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 3rem 2rem; margin-top: 4rem; border-radius: 20px 20px 0 0; box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.1);">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h2 style="color: #2d3748; text-align: center; margin-bottom: 2rem; font-size: 1.8rem; font-weight: 700;">📊 Platform Statistics</h2>
+            <div class="stats">
+                <div class="stat-card">
+                    <h3 id="footerTotalVideos">0</h3>
+                    <p>Total Videos</p>
+                </div>
+                <div class="stat-card">
+                    <h3 id="footerTotalSubjects">0</h3>
+                    <p>Subjects</p>
+                </div>
+                <div class="stat-card">
+                    <h3 id="footerTotalViews">0</h3>
+                    <p>Total Views</p>
+                </div>
+            </div>
+            <p style="text-align: center; color: #718096; margin-top: 2rem; font-size: 0.9rem;">
+                © 2024 <span id="footerChannelName">Educational Video Notes</span>. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>
