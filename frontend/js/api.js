@@ -69,5 +69,10 @@ const getYouTubeThumbnail = (url) => {
 };
 
 const getDriveEmbedUrl = (driveFileId) => {
+    // Extract file ID if full URL is provided
+    if (driveFileId.includes('drive.google.com')) {
+        const match = driveFileId.match(/\/d\/([a-zA-Z0-9_-]+)/);
+        driveFileId = match ? match[1] : driveFileId;
+    }
     return `https://drive.google.com/file/d/${driveFileId}/preview`;
 };
